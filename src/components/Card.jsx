@@ -1,12 +1,13 @@
-const Card = (props) => {
+import './Card.css'
 
-    console.log(props.elemento);
+const Card = ({pizza}) => {
   
   return (
-    <div>
-        <h3>Título de Card: Elemento nº {props.elemento} </h3>
-
-    </div>
+    <div key={pizza.id} className='card' >
+                    <img src={pizza.img} alt='' className='card-img'/>
+                    <h3 className='card-tittle'>{pizza.tipo} </h3>
+                    <h4 className='card-price'>{pizza.precio}</h4>
+                </div>
   )
 }
 

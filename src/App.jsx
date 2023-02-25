@@ -1,14 +1,14 @@
 import './App.css'
 import Card from './components/Card'
+import FuncComponent from './components/FuncComponent';
+import Home from './components/Home';
 
 function App() {
 let numeros = [10, 20, 30];
 
   return (
     <>
-      <Card elemento = {numeros[0]}/>
-      <Card elemento = {numeros[1]}/>
-      <Card elemento = {numeros[2]}/>
+     <Home/>
     </>
   )
 }
